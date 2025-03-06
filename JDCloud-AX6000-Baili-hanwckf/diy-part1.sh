@@ -19,18 +19,22 @@
 #git clone https://github.com/messense/aliyundrive-webdav package/messense
 git clone https://github.com/destan19/OpenAppFilter package/OpenAppFilter
 
-git clone https://github.com/hanwckf/immortalwrt-mt798x -b openwrt-21.02 ../hanwckf
-rm -r package/mtk/drivers
-cp -ar ../hanwckf/package/mtk/drivers package/mtk/
+git clone https://github.com/padavanonly/immortalwrt-mt798x -b openwrt-21.02 ../padavanonly
 
-rm -r package/mtk/applications/datconf
-cp -ar ../hanwckf/package/mtk/applications/datconf package/mtk/applications/
+rm -r package/mtk/applications/luci-app-eqos-mtk
+cp -ar ../padavanonly/package/mtk/applications/luci-app-eqos-mtk package/mtk/applications/
 
-rm -r package/mtk/applications/mtwifi-cfg
-cp -ar ../hanwckf/package/mtk/applications/mtwifi-cfg package/mtk/applications/
+# rm -r package/mtk/drivers
+# cp -ar ../hanwckf/package/mtk/drivers package/mtk/
 
-rm -r package/mtk/applications/luci-app-mtwifi-cfg
-cp -ar ../hanwckf/package/mtk/applications/luci-app-mtwifi-cfg package/mtk/applications/
+# rm -r package/mtk/applications/datconf
+# cp -ar ../hanwckf/package/mtk/applications/datconf package/mtk/applications/
 
-rm -r package/mtk/applications/mtk-smp
-cp -ar ../hanwckf/package/mtk/applications/mtk-smp package/mtk/applications/
+# rm -r package/mtk/applications/mtwifi-cfg
+# cp -ar ../hanwckf/package/mtk/applications/mtwifi-cfg package/mtk/applications/
+
+# rm -r package/mtk/applications/luci-app-mtwifi-cfg
+# cp -ar ../hanwckf/package/mtk/applications/luci-app-mtwifi-cfg package/mtk/applications/
+
+# rm -r package/mtk/applications/mtk-smp
+# cp -ar ../hanwckf/package/mtk/applications/mtk-smp package/mtk/applications/
